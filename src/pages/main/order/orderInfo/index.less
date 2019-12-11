@@ -1,0 +1,32 @@
+.order-detail-info {
+  &>div {
+    &:nth-child(even) {
+      background: #FAFAFA;
+    }
+    &>div {
+      width: 50%;
+      line-height: 20px;
+      padding: 9px 0;
+      display: flex;
+    }
+    .label {
+      display: inline-block;
+      font-weight: bold;
+      text-align: right;
+      margin-right: 3px;
+      flex-shrink: 0;
+    }
+    &>div:nth-child(even) {
+      .label {
+        width: 126px;
+      }
+    }
+    &>div:nth-child(odd) {
+      .label {
+        width: 70px;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+}

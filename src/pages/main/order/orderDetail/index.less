@@ -1,0 +1,87 @@
+.order-detail-container {
+  background: #fff;
+  margin: 27px;
+  padding: 20px;
+
+  .topLay {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-info {
+    & > div {
+      &:nth-child(even) {
+        background: #fafafa;
+      }
+      & > div {
+        width: 50%;
+        line-height: 38px;
+      }
+      .label {
+        display: inline-block;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 3px;
+      }
+      & > div:nth-child(even) {
+        .label {
+          width: 126px;
+        }
+      }
+      & > div:nth-child(odd) {
+        .label {
+          width: 70px;
+        }
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .pay-info {
+    & > div {
+      text-align: right;
+      line-height: 38px;
+      &:nth-child(even) {
+        background: #fafafa;
+        height: 38px;
+      }
+      .label {
+        font-weight: bold;
+      }
+      .price {
+        font-size: 18px;
+        color: red;
+      }
+    }
+  }
+  .order-name {
+    justify-content: flex-start;
+    display: flex;
+    > div {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-between;
+      .order-number {
+        color: #999;
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+  .order-img {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+  .name-ellipsis {
+    height: 44px;
+    overflow: hidden;
+  }
+  .button-container {
+    button {
+      margin-left: 8px;
+    }
+  }
+}

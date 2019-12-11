@@ -1,0 +1,57 @@
+@import '../../utils/style.less';
+
+.--header {
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 2;
+  color: #333;
+  box-shadow: 2px 0 6px 0 rgba(0, 21, 41, 0.35);
+  padding-left: @side_menu_width;
+
+  .contents {
+    line-height: 70px;
+    padding: 0 50px;
+    font-size: 16px;
+  }
+
+  .login-info {
+    display: flex;
+    justify-content: flex-end;
+
+    .message {
+      cursor: pointer;
+      position: relative;
+
+      .text {
+        margin: 0 30px 0 9px;
+      }
+
+      .meaage-icon {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: #FF6666;
+        left: 14px;
+        top: 23px;
+      }
+    }
+
+    .msg-img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .user-info {
+      display: inline-block;
+      cursor: pointer;
+
+      .arror-msg {
+        height: 16px;
+        width: 16px;
+        margin-left: 8px;
+      }
+    }
+  }
+}

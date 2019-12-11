@@ -1,0 +1,104 @@
+.order-list-tab-container {
+  .header {
+    padding: 5px 0 30px 0;
+  }
+  .table-title {
+    display: flex;
+    background: #fafafa;
+    color: #000000;
+    padding: 14px 0;
+    text-align: center;
+  }
+  .order-item {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 10px;
+    .title {
+      background: #f0f2f5;
+      line-height: 40px;
+      padding-left: 103px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        margin-right: 40px;
+      }
+    }
+    .order-footer {
+      line-height: 40px;
+      padding-left: 103px;
+      border-top: 1px solid #e8e8e8;
+      overflow: hidden;
+    }
+    .column {
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .orders {
+        display: block;
+        flex: 1;
+      }
+      .order-name {
+        justify-content: flex-start;
+        display: flex;
+        padding: 10px 23px;
+        border: 1px solid #e8e8e8;
+        border-top: none;
+        > div {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: space-between;
+          .detail {
+            display: flex;
+            justify-content: space-between;
+            color: #999;
+            font-size: 12px;
+            line-height: 24px;
+            .commodity-type {
+              background: #45c59e;
+              height: 24px;
+              width: 24px;
+              line-height: 24px;
+              text-align: center;
+              color: white;
+              flex-shrink: 0;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .order-name:last-child {
+        border-bottom: none;
+      }
+      .order-img {
+        width: 90px;
+        height: 90px;
+        flex-shrink: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+    padding-left: 16px;
+  }
+  .empty {
+    border: 1px solid #e8e8e8;
+    padding: 32px 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  .name-ellipsis {
+    height: 44px;
+    overflow: hidden;
+  }
+  .button-container {
+    button {
+      margin-right: 8px;
+    }
+  }
+}
